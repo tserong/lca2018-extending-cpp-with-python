@@ -1,6 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Cabin:400,700);
 @import url(//fonts.googleapis.com/css?family=Special+Elite:400,700);
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(//cdn.jsdelivr.net/npm/hack-font/build/web/hack.css);
 
 .reveal {
     font-family: "Open Sans Condensed", sans-serif;
@@ -53,14 +54,7 @@
     }
 
     h1, h2 {
-        text-stroke: 1px black;
-        text-shadow:
-            3px 3px 0 #000,
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
-        color: white;
+        color: black;
     }
 
     h3, h4, h5, h6 {
@@ -118,7 +112,7 @@
     }
 
     pre code {
-        font-family: "Source Code Pro", monospace !important;
+        font-family: "Hack", monospace !important;
         background: inherit !important;
         text-shadow: none;
         text-transform: none;
@@ -137,7 +131,8 @@
     blockquote {
         background: #f9f9f9;
         border-left: 10px solid #ccc;
-        margin: 1.5em 10px;
+        text-align: left;
+
         padding: 0.5em 10px;
 
         &:before, &:after {
@@ -148,11 +143,15 @@
         }
 
         &:before {
-            margin-right: 0.25em;
+            left: 0;
+            position: absolute;
+            top: 0.25em;
         }
 
         &:after {
-            margin-left: 0.25em;
+            right: 0.25em;
+            position: absolute;
+            bottom: 0;
         }
 
         p {

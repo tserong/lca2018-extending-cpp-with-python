@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/reveal-override.css"/>
 
     <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css" />
+    <link rel="stylesheet" href="highlight.js/src/styles/github.css" />
 
     <!-- For JavaScript-generated QR codes -->
     <link rel="stylesheet" href="css/qrcode.css" />
@@ -25,22 +25,34 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section id="qrcode" data-menu-title="QR code">
-          <div class="qrcode" id="qrcode-talk"></div>
-          <p><a href="https://example.com/link/to/this/talk" target="_blank"
-                id="talk">https://example.com/link/to/this/talk</a></p>
-        </section>
         <section id="intro"
                  data-markdown="markdown/intro.md"
                  data-separator="^\n\n\n"
                  data-separator-vertical="^\n\n"
                  data-separator-notes="^Note:">
         </section>
-        <section id="main"
-                 data-markdown="markdown/main.md"
+        <section id="concepts"
+                 data-markdown="markdown/concepts.md"
                  data-separator="^\n\n\n"
                  data-separator-vertical="^\n\n"
                  data-separator-notes="^Note:">
+        </section>
+        <section id="ceph-mgr"
+                 data-markdown="markdown/ceph-mgr.md"
+                 data-separator="^\n\n\n"
+                 data-separator-vertical="^\n\n"
+                 data-separator-notes="^Note:">
+        </section>
+        <section id="subinterpreters"
+                 data-markdown="markdown/subinterpreters.md"
+                 data-separator="^\n\n\n"
+                 data-separator-vertical="^\n\n"
+                 data-separator-notes="^Note:">
+        </section>
+        <section id="qrcode" data-menu-title="QR code">
+          <div class="qrcode" id="qrcode-talk"></div>
+          <p><a href="https://goo.gl/bi1ntu" target="_blank"
+                id="talk">https://goo.gl/bi1ntu</a></p>
         </section>
         <section id="conclusion"
                  data-markdown="markdown/conclusion.md"
@@ -86,8 +98,8 @@ for (var i = 0; i < n; i++) {
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
-    controls: true,
-    progress: true,
+    controls: false,
+    progress: false,
     history: true,
     center: true,
 
